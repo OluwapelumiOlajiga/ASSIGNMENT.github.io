@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>registration page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .mainBody {
+      padding: 16px;
+      line-height: 22px;
+      background-color: rgb(195, 134, 212);
+      color: #240041;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=tel],
+    select,
+    input[type=date],
+    input[type=color],
+    input[type=password] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 20px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+    }
+
+    button {
+      width: 100%;
+      background-color: #240041;
+      color: white;
+      padding: 16px 20px;
+      margin: 8px 0;
+      border: none;
+      font-size: x-large;
+
+    }
+  </style>
+</head>
+
+<body>
+  <form action="login page.html" method="post">
+    <div class="mainBody">
+      <h1>Registration Form</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+
+      <label for="fname">First name:</label>
+      <br>
+      <input type="text" placeholder="Enter First name" id="fname" name="fname" required>
+      <br>
+      <label for="lname">Last name:</label>
+      <br>
+      <input type="text" placeholder="Enter Last name" id="lname" name="lname" required>
+      <br>
+      <label for="phone">Phone number:</label>
+      <br>
+      <input type="tel" placeholder="+2348108000000" id="phone" name="phone" required>
+      <br>
+      <label for="email">Email:</label>
+      <br>
+      <input type="email" placeholder="name@gmail.com" name="email" id="email" required>
+      <br>
+      <label for="gender"> Gender: </label>
+      <br>
+      <select name="gender">
+        <option value="none" selected> select gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <br>
+      <label for="d.o.b"> Date of Birth:</label>
+      <br>
+      <input type="date" id="d.o.b" name="d.o.b" required>
+      <br>
+      <label for="favcolor">Favorite Color: </label>
+      <br>
+      <input type="color" id="favcolor" name="favcolor" required>
+      <br>
+      <label for="pwd">Password:</label>
+      <br>
+      <input type="password" placeholder="enter password" id="pwd" name="pwd" required>
+      <br>
+      <label for="pwd">Password:</label>
+      <br>
+      <input type="password" placeholder="confirm password" id="pwd" name="pwd" required>
+      <button type="submit">
+         Register 
+      </button>
+    </div>
+  </form>
+</body>
+
+</html>
